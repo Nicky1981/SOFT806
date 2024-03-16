@@ -22,11 +22,11 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore SOFT806/
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build SOFT806/ --no-restore
     - name: Test
-      run: dotnet test --no-build --no-restore --verbosity normal
+      run: dotnet test SOFT806/ --no-build --no-restore --verbosity normal
     - name: Publish
-      run: dotnet publish --no-build --no-restore --verbosity normal
+      run: dotnet publish SOFT806/ --no-build --no-restore --verbosity normal
       
