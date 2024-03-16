@@ -28,5 +28,5 @@ jobs:
     - name: Test
       run: dotnet test SOFT806/ --no-build --no-restore --verbosity normal
     - name: Publish
-      run: dotnet publish SOFT806/ --no-build --no-restore --verbosity normal
+      run: dotnet publish SOFT806/ --no-restore --verbosity normal
       
